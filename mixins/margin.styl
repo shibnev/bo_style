@@ -1,0 +1,17 @@
+margin-x($left = auto, $right = $left) {
+  margin-left: $left;
+  margin-right: $left;
+}
+
+margin-y($top, $bottom = $top) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+margin-x-mq($obj) {
+  _(margin-x, $obj)
+}
+
+margin-y-mq($obj) {
+  _(margin-y, $obj)
+}

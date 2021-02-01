@@ -1,0 +1,7 @@
+mq($key) {
+  $condition = 'screen and (min-width: %s)' % $bp[$key]
+
+  @media $condition {
+    {block}
+  }
+}

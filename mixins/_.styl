@@ -1,0 +1,23 @@
+_($property, $value) {
+  _init($props) {
+    if ($property is a 'function') {
+      $property($props)
+    } else {
+      {unquote($property)}: $props
+    }
+  }
+
+  if ($value is a 'object') {
+    for $key, $args in $value {
+      if ($key == 'mob') {
+        _init($args)
+      } else {
+        +mq($key) {
+          _init($args)
+        }
+      }
+    }
+  } else {
+    {unquote($property)}: $value
+  }
+}

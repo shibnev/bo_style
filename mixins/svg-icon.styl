@@ -1,0 +1,11 @@
+svg-icon($w = auto, $h = $w) {
+  wh($w, $h);
+
+  position: relative;
+
+  * {
+    @extend $abs-spread;
+
+    pointer-events: none;
+  }
+}

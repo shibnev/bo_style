@@ -1,0 +1,10 @@
+wider($val) {
+  margin-x(-$val);
+
+  width: calc(100% + ($val * 2));
+}
+
+p-wider($val) {
+  $wider($val);
+  padding-x($val);
+}

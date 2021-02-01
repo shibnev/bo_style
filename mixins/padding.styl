@@ -1,0 +1,21 @@
+padding-y($top, $bottom = $top) {
+  padding-bottom: rem($bottom);
+  padding-top: rem($top);
+}
+
+padding-x($left, $right = $left) {
+  padding-left: rem($left);
+  padding-right: rem($right);
+}
+
+padding-x-mq($obj) {
+  _(padding-x, $obj)
+}
+
+padding-y-mq(arr) {
+  _(padding-y, $obj)
+}
+
+_padding(obj) {
+  _(padding, obj)
+}

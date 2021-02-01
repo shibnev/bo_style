@@ -1,0 +1,26 @@
+//$font-size($size) {
+//  font-size: rem($size);
+//}
+
+font($size = false, $lh = false, $weight = false, $spacing = false, $family = false, $style = false) {
+  if $size {
+    _(font-size, $size)
+  }
+
+  if $lh {
+    _(line-height, $lh)
+  }
+
+  if $weight {
+    _(font-weight, $weight)
+  }
+
+  if $spacing {
+    _(letter-spacing, $spacing)
+  }
+
+  if $family { font-family: $family; }
+
+  if $style { font-style: $style; }
+}
+
