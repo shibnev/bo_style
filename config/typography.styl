@@ -1,5 +1,4 @@
-$font-main = 'Muller', sans-serif;
-$font-family = $font-main;
+$font-family = $font-primary;
 $font-size = 18px;
 $font-weight = 400;
 $line-height = 1.2;
@@ -19,27 +18,17 @@ html {
 
 $h1 {
   font(
-    {'mob': 34px, 'xs': 60px},
-    {'mob': 1.17, 'xs': 1.07},
-    {'mob': 500, 'xs': 400},
-    {'xs': -0.5px}
-  );
-}
-
-$h2 {
-  font(
-    {'mob': 24px, 'xs': 60px},
-    {'mob': 1.17, 'xs': 1.07},
-    {'mob': 500, 'xs': 400},
-    {'xs': -0.5px}
+    {'mob': rem(32px)},
+    {'mob': rem(44px)},
+    {'mob': bold}
   );
 }
 
 $desc {
   font(
-    {'mob': 24px, 'xs': 60px},
-    {'mob': 1.17, 'xs': 1.07},
-    {'mob': 500, 'xs': 400},
+    {'mob': 20px},
+    {'mob': 1.17},
+    {'mob': 500},
     {'xs': -0.5px}
   );
 }

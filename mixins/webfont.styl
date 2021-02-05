@@ -1,0 +1,15 @@
+webfont(family, font-url , arr) {
+  for _, font in arr {
+    if (!font['style']) {
+      font['style'] = normal
+    }
+
+    @font-face {
+      font-family: family;
+      src: url(FONTS_URL + font-url + '/' + font['file'] + '.woff2') format('woff2'),
+        url(FONTS_URL + font-url + '/' + font['file'] + '.woff') format('woff');
+      font-weight: font['weight'];
+      font-style: font['style'];
+    }
+  }
+}
